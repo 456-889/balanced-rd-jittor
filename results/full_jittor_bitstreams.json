@@ -1,0 +1,115 @@
+{
+  "views_with_equal_payload_lengths": 12,
+  "num_views": 12,
+  "coder": "CompressAI 1.2.4 rANS, using Jittor-fine-tuned parameters",
+  "test": {
+    "mean_actual_bpp": 0.23697916666666666,
+    "mean_psnr_db": 26.67419566250472,
+    "by_image": [
+      {
+        "name": "astronaut-overview",
+        "payload_bytes": 492,
+        "actual_bpp": 0.4270833333333333,
+        "psnr_db": 22.2322153415018,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "astronaut-crop1",
+        "payload_bytes": 144,
+        "actual_bpp": 0.125,
+        "psnr_db": 30.294477205150553,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "astronaut-crop2",
+        "payload_bytes": 292,
+        "actual_bpp": 0.2534722222222222,
+        "psnr_db": 25.850420895733567,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "astronaut-crop3",
+        "payload_bytes": 244,
+        "actual_bpp": 0.21180555555555555,
+        "psnr_db": 27.084722021482573,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-overview",
+        "payload_bytes": 168,
+        "actual_bpp": 0.14583333333333334,
+        "psnr_db": 28.422507835670242,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-crop1",
+        "payload_bytes": 76,
+        "actual_bpp": 0.06597222222222222,
+        "psnr_db": 35.2708409323752,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-crop2",
+        "payload_bytes": 192,
+        "actual_bpp": 0.16666666666666666,
+        "psnr_db": 26.848925900912217,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-crop3",
+        "payload_bytes": 80,
+        "actual_bpp": 0.06944444444444445,
+        "psnr_db": 29.74584026763797,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-overview",
+        "payload_bytes": 460,
+        "actual_bpp": 0.3993055555555556,
+        "psnr_db": 20.368769380416584,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-crop1",
+        "payload_bytes": 344,
+        "actual_bpp": 0.2986111111111111,
+        "psnr_db": 24.915616110929648,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-crop2",
+        "payload_bytes": 396,
+        "actual_bpp": 0.34375,
+        "psnr_db": 24.652813315478767,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-crop3",
+        "payload_bytes": 388,
+        "actual_bpp": 0.3368055555555556,
+        "psnr_db": 24.403198742767604,
+        "forward_decode_max_abs": 0.0
+      }
+    ]
+  },
+  "max_abs_decoded_vs_native_jittor": 2.205371856689453e-06,
+  "torch_finetune_mean_actual_bpp": 0.23697916666666666,
+  "torch_finetune_mean_psnr_db": 26.674190478763254,
+  "gap_in_mean_actual_bpp": 0.0,
+  "gap_in_mean_psnr_db": 5.183741464520608e-06,
+  "training_max_abs_difference": {
+    "rate": 1.1771917343139648e-06,
+    "distortion": 4.76837158203125e-07,
+    "a": 1.109114432301661e-05,
+    "b": 1.1120946645459817e-05
+  },
+  "absolute_tolerances": {
+    "training_rate": 0.002,
+    "training_distortion": 0.002,
+    "training_weight": 0.002,
+    "decode_max_abs": 0.0003,
+    "mean_payload_bpp": 0.0005,
+    "mean_psnr_db": 0.01
+  },
+  "pass": true
+}

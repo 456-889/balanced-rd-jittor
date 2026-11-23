@@ -1,0 +1,6 @@
+float64 / CPU / 90 iterations / seed 4805
+Maximum absolute differences
+S1 raw gradient coefficients: 3.331e-16
+S1 logit after Adam: 2.220e-16
+S2 raw gradient coefficients vs KKT solve: 1.665e-16
+PASS (threshold 1e-12); equal/zero log-gradient and vanilla cases passed.

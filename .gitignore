@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.cache/
+data/*.npz
+results/smoke*/
+.DS_Store

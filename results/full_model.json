@@ -1,0 +1,412 @@
+{
+  "model": "CompressAI mbt2018_mean",
+  "quality": 1,
+  "lambda": 0.0018,
+  "scope": "CPU PyTorch full-backbone check, single rate, short fine-tuning",
+  "torch": "2.8.0+cu128",
+  "compressai": "1.2.4",
+  "threads": 2,
+  "seed": 1701,
+  "lr": 5e-05,
+  "batch_size": 2,
+  "steps": 8,
+  "bpp_definition": "lengths of y and z rANS payloads / original pixels, excludes file headers",
+  "methods": {
+    "vanilla": {
+      "training_seconds": 0.5744691999999998,
+      "train": [
+        {
+          "step": 1,
+          "rate": 0.24733878672122955,
+          "distortion": 0.09632234275341034,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        },
+        {
+          "step": 2,
+          "rate": 0.23366057872772217,
+          "distortion": 0.09878665208816528,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        },
+        {
+          "step": 3,
+          "rate": 0.19671516120433807,
+          "distortion": 0.05951932817697525,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        },
+        {
+          "step": 4,
+          "rate": 0.20845907926559448,
+          "distortion": 0.086583711206913,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        },
+        {
+          "step": 5,
+          "rate": 0.25228339433670044,
+          "distortion": 0.10449833422899246,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        },
+        {
+          "step": 6,
+          "rate": 0.22689013183116913,
+          "distortion": 0.07508469372987747,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        },
+        {
+          "step": 7,
+          "rate": 0.2349502444267273,
+          "distortion": 0.1185610294342041,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        },
+        {
+          "step": 8,
+          "rate": 0.19875936210155487,
+          "distortion": 0.06552095711231232,
+          "grad_rate_coefficient": 1.0,
+          "grad_distortion_coefficient": 1.0
+        }
+      ],
+      "after": {
+        "mean_actual_bpp": 0.236400462962963,
+        "mean_psnr_db": 26.612799927664074,
+        "by_image": [
+          {
+            "name": "astronaut-overview",
+            "payload_bytes": 488,
+            "actual_bpp": 0.4236111111111111,
+            "psnr_db": 22.28525711787973,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "astronaut-crop1",
+            "payload_bytes": 152,
+            "actual_bpp": 0.13194444444444445,
+            "psnr_db": 30.246915640052705,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "astronaut-crop2",
+            "payload_bytes": 292,
+            "actual_bpp": 0.2534722222222222,
+            "psnr_db": 25.801169594610318,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "astronaut-crop3",
+            "payload_bytes": 244,
+            "actual_bpp": 0.21180555555555555,
+            "psnr_db": 27.061888276870842,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-overview",
+            "payload_bytes": 168,
+            "actual_bpp": 0.14583333333333334,
+            "psnr_db": 28.279524835898847,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-crop1",
+            "payload_bytes": 76,
+            "actual_bpp": 0.06597222222222222,
+            "psnr_db": 34.68738420855317,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-crop2",
+            "payload_bytes": 188,
+            "actual_bpp": 0.16319444444444445,
+            "psnr_db": 26.766672993702905,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-crop3",
+            "payload_bytes": 88,
+            "actual_bpp": 0.0763888888888889,
+            "psnr_db": 29.956160391884715,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-overview",
+            "payload_bytes": 456,
+            "actual_bpp": 0.3958333333333333,
+            "psnr_db": 20.391331172703087,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-crop1",
+            "payload_bytes": 340,
+            "actual_bpp": 0.2951388888888889,
+            "psnr_db": 24.885510250891627,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-crop2",
+            "payload_bytes": 392,
+            "actual_bpp": 0.3402777777777778,
+            "psnr_db": 24.60435449450806,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-crop3",
+            "payload_bytes": 384,
+            "actual_bpp": 0.3333333333333333,
+            "psnr_db": 24.38743015441286,
+            "forward_decode_max_abs": 0.0
+          }
+        ]
+      }
+    },
+    "s2": {
+      "training_seconds": 0.9620420999999997,
+      "train": [
+        {
+          "step": 1,
+          "rate": 0.24733878672122955,
+          "distortion": 0.09632234275341034,
+          "grad_rate_coefficient": 0.3192325585697404,
+          "grad_distortion_coefficient": 0.6807674414302595
+        },
+        {
+          "step": 2,
+          "rate": 0.2349102795124054,
+          "distortion": 0.0986645296216011,
+          "grad_rate_coefficient": 0.5245701383461128,
+          "grad_distortion_coefficient": 0.47542986165388723
+        },
+        {
+          "step": 3,
+          "rate": 0.1973101943731308,
+          "distortion": 0.05923239514231682,
+          "grad_rate_coefficient": 0.4204679144944371,
+          "grad_distortion_coefficient": 0.5795320855055629
+        },
+        {
+          "step": 4,
+          "rate": 0.2089502364397049,
+          "distortion": 0.08695376664400101,
+          "grad_rate_coefficient": 0.46620925106830974,
+          "grad_distortion_coefficient": 0.5337907489316902
+        },
+        {
+          "step": 5,
+          "rate": 0.25310268998146057,
+          "distortion": 0.10446584969758987,
+          "grad_rate_coefficient": 0.5101753708570276,
+          "grad_distortion_coefficient": 0.4898246291429724
+        },
+        {
+          "step": 6,
+          "rate": 0.22798992693424225,
+          "distortion": 0.07439173012971878,
+          "grad_rate_coefficient": 0.43603136667466197,
+          "grad_distortion_coefficient": 0.5639686333253381
+        },
+        {
+          "step": 7,
+          "rate": 0.23692686855793,
+          "distortion": 0.11659054458141327,
+          "grad_rate_coefficient": 0.476742772446186,
+          "grad_distortion_coefficient": 0.5232572275538139
+        },
+        {
+          "step": 8,
+          "rate": 0.19892533123493195,
+          "distortion": 0.06318391114473343,
+          "grad_rate_coefficient": 0.43583798215899516,
+          "grad_distortion_coefficient": 0.5641620178410048
+        }
+      ],
+      "after": {
+        "mean_actual_bpp": 0.23697916666666666,
+        "mean_psnr_db": 26.674190478763254,
+        "by_image": [
+          {
+            "name": "astronaut-overview",
+            "payload_bytes": 492,
+            "actual_bpp": 0.4270833333333333,
+            "psnr_db": 22.232160135308227,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "astronaut-crop1",
+            "payload_bytes": 144,
+            "actual_bpp": 0.125,
+            "psnr_db": 30.29430134693149,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "astronaut-crop2",
+            "payload_bytes": 292,
+            "actual_bpp": 0.2534722222222222,
+            "psnr_db": 25.850399336777834,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "astronaut-crop3",
+            "payload_bytes": 244,
+            "actual_bpp": 0.21180555555555555,
+            "psnr_db": 27.084659001476417,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-overview",
+            "payload_bytes": 168,
+            "actual_bpp": 0.14583333333333334,
+            "psnr_db": 28.422507835670242,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-crop1",
+            "payload_bytes": 76,
+            "actual_bpp": 0.06597222222222222,
+            "psnr_db": 35.27113378793433,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-crop2",
+            "payload_bytes": 192,
+            "actual_bpp": 0.16666666666666666,
+            "psnr_db": 26.84891406157857,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "rocket-crop3",
+            "payload_bytes": 80,
+            "actual_bpp": 0.06944444444444445,
+            "psnr_db": 29.74584026763797,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-overview",
+            "payload_bytes": 460,
+            "actual_bpp": 0.3993055555555556,
+            "psnr_db": 20.36874275411368,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-crop1",
+            "payload_bytes": 344,
+            "actual_bpp": 0.2986111111111111,
+            "psnr_db": 24.915601887725828,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-crop2",
+            "payload_bytes": 396,
+            "actual_bpp": 0.34375,
+            "psnr_db": 24.65282462097197,
+            "forward_decode_max_abs": 0.0
+          },
+          {
+            "name": "gravel-crop3",
+            "payload_bytes": 388,
+            "actual_bpp": 0.3368055555555556,
+            "psnr_db": 24.40320070903253,
+            "forward_decode_max_abs": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "pretrained_sha256": "e522738dc4599d1538fcdb16e21aa56df9146d60e8e083542466b387c1960156",
+  "N": 128,
+  "M": 192,
+  "parameters": 7028003,
+  "before": {
+    "mean_actual_bpp": 0.22627314814814814,
+    "mean_psnr_db": 26.79066206996714,
+    "by_image": [
+      {
+        "name": "astronaut-overview",
+        "payload_bytes": 484,
+        "actual_bpp": 0.4201388888888889,
+        "psnr_db": 22.50694259063517,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "astronaut-crop1",
+        "payload_bytes": 136,
+        "actual_bpp": 0.11805555555555555,
+        "psnr_db": 30.34885927933105,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "astronaut-crop2",
+        "payload_bytes": 276,
+        "actual_bpp": 0.23958333333333334,
+        "psnr_db": 26.013445900858663,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "astronaut-crop3",
+        "payload_bytes": 240,
+        "actual_bpp": 0.20833333333333334,
+        "psnr_db": 27.421732226209436,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-overview",
+        "payload_bytes": 152,
+        "actual_bpp": 0.13194444444444445,
+        "psnr_db": 28.692505809377113,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-crop1",
+        "payload_bytes": 64,
+        "actual_bpp": 0.05555555555555555,
+        "psnr_db": 35.29034152060348,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-crop2",
+        "payload_bytes": 176,
+        "actual_bpp": 0.1527777777777778,
+        "psnr_db": 27.059777794925296,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "rocket-crop3",
+        "payload_bytes": 72,
+        "actual_bpp": 0.0625,
+        "psnr_db": 29.71993964446259,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-overview",
+        "payload_bytes": 452,
+        "actual_bpp": 0.3923611111111111,
+        "psnr_db": 20.369823913261648,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-crop1",
+        "payload_bytes": 328,
+        "actual_bpp": 0.2847222222222222,
+        "psnr_db": 25.0162804341757,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-crop2",
+        "payload_bytes": 376,
+        "actual_bpp": 0.3263888888888889,
+        "psnr_db": 24.61844297901923,
+        "forward_decode_max_abs": 0.0
+      },
+      {
+        "name": "gravel-crop3",
+        "payload_bytes": 372,
+        "actual_bpp": 0.3229166666666667,
+        "psnr_db": 24.429852746746295,
+        "forward_decode_max_abs": 0.0
+      }
+    ]
+  }
+}

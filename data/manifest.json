@@ -1,0 +1,57 @@
+{
+  "train_photos": [
+    "camera.png",
+    "coffee.png",
+    "chelsea.png",
+    "brick.png",
+    "grass.png",
+    "hubble_deep_field.jpg"
+  ],
+  "test_photos": [
+    "astronaut.png",
+    "rocket.jpg",
+    "gravel.png"
+  ],
+  "sha256_original": {
+    "camera.png": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a",
+    "coffee.png": "cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7",
+    "chelsea.png": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+    "brick.png": "7966caf324f6ba843118d98f7a07746d22f6a343430add0233eca5f6eaaa8fcf",
+    "grass.png": "b6b6022426b38936c43a4ac09635cd78af074e90f42ffa8227ac8b7452d39f89",
+    "hubble_deep_field.jpg": "3a19c5dd8a927a9334bb1229a6d63711b1c0c767fb27e2286e7c84a3e2c2f5f4",
+    "astronaut.png": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "rocket.jpg": "c2dd0de7c538df8d111e479619b129464d0269d0ae5fd18ca91d33a7fdfea95c",
+    "gravel.png": "c48615b451bf1e606fbd72c0aa9f8cc0f068ab7111ef7d93bb9b0f2586440c12"
+  },
+  "seed": 1701,
+  "train_shape": [
+    192,
+    3,
+    32,
+    32
+  ],
+  "test_shape": [
+    12,
+    3,
+    96,
+    96
+  ],
+  "test_labels": [
+    "astronaut-overview",
+    "astronaut-crop1",
+    "astronaut-crop2",
+    "astronaut-crop3",
+    "rocket-overview",
+    "rocket-crop1",
+    "rocket-crop2",
+    "rocket-crop3",
+    "gravel-overview",
+    "gravel-crop1",
+    "gravel-crop2",
+    "gravel-crop3"
+  ],
+  "array_sha256": {
+    "train": "f46d1c8c1ccdde0c8801a829d03b0d3d9b838f9ba44c353b7c7aac1c4d91d5c4",
+    "test": "2ae3ef5612b4689ff8d92cb07ed37886b1a00c77eb6bd7ff8ce1a500d1038e11"
+  }
+}

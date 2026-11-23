@@ -1,0 +1,33 @@
+{
+  "max_absolute_difference": {
+    "eval_rate_distortion": 5.6427581718310194e-08,
+    "eval_pixels": 1.7881393432617188e-07,
+    "vanilla_rate_distortion_weights": 5.519715040591677e-08,
+    "vanilla_parameters_after_update": 7.450580596923828e-09,
+    "s1_rate_distortion_weights": 5.519715040591677e-08,
+    "s1_parameters_after_update": 7.450580596923828e-09,
+    "s1_post_update_logits": 3.765821023071769e-10,
+    "s2_rate_distortion_weights": 5.519715040591677e-08,
+    "s2_parameters_after_update": 1.4901161193847656e-08
+  },
+  "absolute_tolerances": {
+    "eval_rate_distortion": 0.0003,
+    "eval_pixels": 5e-05,
+    "vanilla_rate_distortion_weights": 0.0003,
+    "vanilla_parameters_after_update": 5e-05,
+    "s1_rate_distortion_weights": 0.0003,
+    "s1_parameters_after_update": 5e-05,
+    "s1_post_update_logits": 5e-05,
+    "s2_rate_distortion_weights": 0.0003,
+    "s2_parameters_after_update": 5e-05
+  },
+  "passed": true,
+  "common_checkpoint": "results/torch/vanilla/checkpoint.npz",
+  "batch_indices": [
+    0,
+    32,
+    64,
+    97
+  ],
+  "noise_seed": 313
+}

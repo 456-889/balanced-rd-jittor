@@ -1,0 +1,26 @@
+{
+  "torch_reference": "two original upstream S1 methods + common network Adam",
+  "official_source_sha256": "e9e29e5036c070b5267aa361cfd4a5319416b03485014a03d29e6049e714f884",
+  "rtol": 0.0002,
+  "atol": 2e-05,
+  "seed_noise": 4701,
+  "lambda": 0.013,
+  "model_lr": 0.001,
+  "passed": true,
+  "max_abs_difference": {
+    "losses_before": 2.640104426632206e-06,
+    "coefficients": 1.5167386548109452e-09,
+    "logits_after": 3.4743364955847067e-09,
+    "losses_after": 1.5634751520110513e-06,
+    "reconstruction": 5.960464477539063e-08,
+    "param_e1": 7.450580596923828e-09,
+    "param_e1b": 0.0,
+    "param_e2": 7.450580596923828e-09,
+    "param_e2b": 0.0,
+    "param_d1": 1.4901161193847656e-08,
+    "param_d1b": 0.0,
+    "param_d2": 1.862645149230957e-09,
+    "param_d2b": 0.0,
+    "param_log_scale": 1.1641532182693481e-10
+  }
+}
